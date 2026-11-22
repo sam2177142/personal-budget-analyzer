@@ -103,7 +103,10 @@ if not daily_spending.empty:
 
 # Display the transactions used to make the charts.
 st.subheader("Transactions")
-st.dataframe(filtered_data[["date", "description", "category", "amount"]])
+st.dataframe(
+    filtered_data[["date", "description", "category", "amount"]],
+    hide_index=True
+)
 
 # Let users download the currently filtered transactions as a CSV.
 csv_data = filtered_data.to_csv(index=False)
