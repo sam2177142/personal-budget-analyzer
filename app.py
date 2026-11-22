@@ -5,6 +5,12 @@
 import pandas as pd
 import streamlit as st
 
+# Configure the page title and layout
+st.set_page_config(
+    page_title="Personal Budget Analyzer",
+    layout="wide"
+)
+
 # Give the web page a title and a short explanation.
 st.title("💰 Personal Budget Analyzer")
 st.write("Explore your income, expenses, and spending habits.")
